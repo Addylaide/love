@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Valentine's Day Website for Mitchell Wagner</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+    }
+    .container {
+      max-width: 800px;
+      margin: 50px auto;
+      text-align: center;
+    }
+    h1 {
+      color: #e60000;
+    }
+    p {
+      font-size: 18px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+    .game-container {
+      margin-top: 50px;
+    }
+    .level {
+      margin-bottom: 20px;
+    }
+    .level-description {
+      font-weight: bold;
+      font-size: 20px;
+      color: #333;
+    }
+    .level-input {
+      margin-top: 10px;
+      padding: 5px;
+    }
+    .btn-submit {
+      background-color: #e60000;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .external-link {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Happy Valentine's Day, Mitchell Wagner!</h1>
+    <p>I just wanted to take a moment to let you know how much you mean to me. You are my rock, my joy, and my everything.</p>
+    <p>Distance may separate us physically, but know that you are always in my heart.</p>
+    <p>Here's to many more Valentine's Days together. I adore you!</p>
+    <img src="https://via.placeholder.com/600x400" alt="Heart image">
+
+    <div class="game-container">
+      <h2>Love Puzzle Game</h2>
+      <div class="level">
+        <p class="level-description">Level 1: Decode the Love Message</p>
+        <input type="text" class="level-input" id="level1input" placeholder="Enter the decoded message">
+        <button class="btn-submit" onclick="checkLevel1()">Submit</button>
+      </div>
+      <div class="level">
+        <p class="level-description">Level 2: Find the Missing Piece</p>
+        <p>Complete the heart puzzle by finding the missing piece: l__e.</p>
+        <input type="text" class="level-input" id="level2input" placeholder="Enter the missing letter">
+        <button class="btn-submit" onclick="checkLevel2()">Submit</button>
+      </div>
+      <div class="level">
+        <p class="level-description">Level 3: Love Riddle</p>
+        <p>What comes once in a minute, twice in a moment, but never in a thousand years?</p>
+        <input type="text" class="level-input" id="level3input" placeholder="Your answer">
+        <button class="btn-submit" onclick="checkLevel3()">Submit</button>
+      </div>
+      <!-- Add more levels similarly -->
+    </div>
+
+    <div class="external-link">
+      <p>For a surprise, click <a href="https://gifft.me/hm#eMgMvWfxW1Bc8JiHgfCj" target="_blank">here</a>!</p>
+    </div>
+  </div>
+
+  <script>
+    // Function to check Level 1
+    function checkLevel1() {
+      var userInput = document.getElementById('level1input').value.toLowerCase();
+      var correctAnswer = "i adore you";
+      
+      if (userInput === correctAnswer) {
+        alert("Congratulations! You've completed Level 1.");
+        // Move to next level or show next puzzle
+        // You can repeat this pattern for other levels
+      } else {
+        alert("Oops! That's not the correct answer. Try again.");
+      }
+    }
+
+    // Function to check Level 2
+    function checkLevel2() {
+      var userInput = document.getElementById('level2input').value.toLowerCase();
+      var correctAnswer = "ove";
+      
+      if (userInput === correctAnswer) {
+        alert("Congratulations! You've completed Level 2.");
+        // Move to next level or show next puzzle
+        // You can repeat this pattern for other levels
+      } else {
+        alert("Oops! That's not the correct answer. Try again.");
+      }
+    }
+
+    // Function to check Level 3
+    function checkLevel3() {
+      var userInput = document.getElementById('level3input').value.toLowerCase();
+      var correctAnswer = "m";
+      
+      if (userInput === correctAnswer) {
+        alert("Congratulations! You've completed Level 3.");
+        // Move to next level or show next puzzle
+        // You can repeat this pattern for other levels
+      } else {
+        alert("Oops! That's not the correct answer. Try again.");
+      }
+    }
+    // Add more check level functions for other levels similarly
+  </script>
+</body>
+</html>
